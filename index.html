@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b14">
+  <meta name="description" content="IKY XITER — toko produk digital gaming.">
+  <title>IKY XITER — Digital Gaming Store</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">IX</span><span>IKY <b>XITER</b><small>DIGITAL GAMING STORE</small></span></a>
+    <a class="help" href="https://wa.me/" target="_blank" rel="noreferrer">Bantuan ↗</a>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> DIGITAL STORE • READY ONLINE</div>
+      <h1>UPGRADE YOUR<br><span>GAME.</span></h1>
+      <p>Temukan produk digital gaming favoritmu. Katalog dan harga dimuat dari server penyedia.</p>
+      <a class="hero-button" href="#catalog">Lihat Produk <span>↓</span></a>
+      <div class="hero-glow"></div>
+    </section>
+    <section id="catalog" class="catalog">
+      <div class="section-head">
+        <div><div class="eyebrow">KATALOG RESMI API</div><h2>Produk <span>Digital</span></h2></div>
+        <button id="refresh" class="refresh">↻ Muat ulang</button>
+      </div>
+      <div class="filters">
+        <input id="search" type="search" placeholder="Cari nama produk..." aria-label="Cari produk">
+        <select id="category" aria-label="Filter kategori"><option value="">Semua kategori</option></select>
+      </div>
+      <div id="status" class="status">Menghubungkan ke katalog...</div>
+      <div id="products" class="products"></div>
+      <p class="disclaimer">Harga dan ketersediaan mengikuti data penyedia API. Tombol beli belum diaktifkan sampai endpoint order dan pembayaran resmi dikonfigurasi.</p>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> IKY XITER</span><span>Digital goods • Secure by design</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>
